@@ -9,7 +9,7 @@ ENV LANG       en_US.UTF-8
 ENV LC_ALL     en_US.UTF-8
 
 # Install Tinyproxy
-RUN apt-get -y install tinyproxy
+RUN apt-get update && apt-get -y install tinyproxy
 
 # Configure Tinyproxy
 # This allows allows all connections.
